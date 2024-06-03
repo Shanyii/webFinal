@@ -1,0 +1,160 @@
+body {
+    background-image: url('img/logBackOne.jpg');
+    background-size: 100%; /* 調整背景圖片大小以填滿整個視窗 */
+}
+
+h1 {
+    color: white; /* 設置標題文字顏色為白色 */
+}
+
+p {
+    color: white; /* 設置段落文字顏色為白色 */
+}
+
+a {
+    color: white; /* 設置連結文字顏色為白色 */
+    text-decoration: none; /* 移除連結的下劃線 */
+}
+
+a:hover {
+    text-decoration: underline; /* 滑鼠懸停時顯示下劃線 */
+}
+
+header {
+    color: darkred;
+    padding: 20px;
+}
+.btn {
+    background: #8B0000;
+    /* 創建渐变 */
+    background-image: -webkit-linear-gradient(top, #8B0000, #000000);
+    background-image: -moz-linear-gradient(top, #8B0000, #000000);
+    background-image: -ms-linear-gradient(top, #8B0000, #000000);
+    background-image: -o-linear-gradient(top, #8B0000, #000000);
+    background-image: linear-gradient(to bottom, #8B0000, #000000);
+    /* 其他樣式 */
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    text-shadow: 3px 2px 1px #666666;
+    -webkit-box-shadow: 6px 5px 24px #666666;
+    -moz-box-shadow: 6px 5px 18px #666666;
+    box-shadow: 6px 5px 24px #666666;
+    font-family: Arial;
+    color: #fafafa;
+    font-size: 20px;
+    padding: 10px 22px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #8B0000);
+    background-image: -moz-linear-gradient(top, #000000, #8B0000);
+    background-image: -ms-linear-gradient(top, #000000, #8B0000);
+    background-image: -o-linear-gradient(top, #000000, #8B0000);
+    background-image: linear-gradient(to bottom, #000000, #8B0000);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.landing {
+    text-align: center;
+    margin-top: 50px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="submit"] {
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #8B0000;
+}
+
+
+.login-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-right: 20px; /* 調整表單和圖片之間的間距 */
+}
+
+.login-image img {
+    max-width: 150px; /* 設置圖片的最大寬度 */
+    height: auto; /* 讓圖片保持原始高度比例 */
+}
+
+.login-image img {
+    max-width: 200px; /* 設置圖片的最大寬度 */
+    height: auto; /* 讓圖片保持原始高度比例 */
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+/* 响应式设计 - 螢幕小於等於 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* 調整字體大小 */
+    }
+    .login-image img {
+        max-width: 80%; /* 設置圖片的最大寬度為父元素寬度的 80% */
+        height: auto; /* 讓圖片保持原始高度比例 */
+    }
+}
+
+/* 响应式设计 - 螢幕小於等於 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* 更小的字體大小 */
+    }
+    .login-image img {
+        max-width: 70%; /* 設置圖片的最大寬度為父元素寬度的 80% */
+        height: auto; /* 讓圖片保持原始高度比例 */
+    }
+}

@@ -1,0 +1,80 @@
+body {
+    background-image: url('img/logBackOne.jpg');
+    background-size: 100%; /* 調整背景圖片大小以填滿整個視窗 */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    color: darkred;
+    padding: 40px;
+    left: auto;
+}
+.menu-link {
+    color: #fff; /* 將連結文字顏色設置為白色 */
+    text-decoration: none; /* 移除連結的下劃線 */
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #ccc; /* 增加邊框粗細 */
+    border-radius: 10px; /* 設置圓角 */
+    background-color: rgba(255, 255, 255, 0.6); /* 透明度為80%的白色背景 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+    margin-right: 20px; /* 調整表單和圖片之間的間距 */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* 設置輸入框邊框樣式 */
+    border-radius: 5px; /* 設置圓角 */
+    box-sizing: border-box; /* 讓內邊距和邊框不影響元素的實際寬度 */
+}
+
+input[type="submit"] {
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #460000;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* 響應式設計 - 螢幕小於等於 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* 調整字體大小 */
+    }
+}
+
+/* 響應式設計 - 螢幕小於等於 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* 更小的字體大小 */
+    }
+}

@@ -1,0 +1,152 @@
+body {
+    background-image: url('img/logBackOne.jpg');
+    background-size: 100%; /* 調整背景圖片大小以填滿整個視窗 */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    color: darkred;
+    padding: 40px;
+    left: auto;
+}
+
+.menu-link {
+    color: #fff; /* 將連結文字顏色設置為白色 */
+    text-decoration: none; /* 移除連結的下劃線 */
+}
+
+.menu-link:hover {
+    text-decoration: underline; /* 滑鼠懸停時顯示下劃線 */
+}
+
+.additional-options {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.additional-options a {
+    color: black; /* 將額外選項文字顏色設置為黑色 */
+    font-size: 14px; /* 設置連結文字大小為14px */
+    text-decoration: none; /* 移除連結的下劃線 */
+    margin-right: 5px; /* 增加右邊距 */
+}
+
+input[type="submit"] {
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #460000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.landing {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #ccc; /* 增加邊框粗細 */
+    border-radius: 10px; /* 設置圓角 */
+    background-color: rgba(255, 255, 255, 0.6); /* 透明度為80%的白色背景 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+    margin-right: 20px; /* 調整表單和圖片之間的間距 */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* 設置輸入框邊框樣式 */
+    border-radius: 5px; /* 設置圓角 */
+    box-sizing: border-box; /* 讓內邊距和邊框不影響元素的實際寬度 */
+}
+
+.signup-option {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.signup-option p {
+    margin: 0;
+    color: #333;
+    font-family: Arial, sans-serif; /* 保持一致的字體 */
+}
+
+.signup-link {
+    color: darkred; /* 將註冊連結文字顏色設置為深紅色 */
+    font-size: 14px; /* 設置註冊連結文字大小為14px */
+    text-decoration: none; /* 移除連結的下劃線 */
+    margin-left: 5px; /* 增加左邊距 */
+}
+
+.signup-link:hover {
+    text-decoration: underline; /* 滑鼠懸停時顯示下劃線 */
+}
+
+.login-image img {
+    max-width: 200px; /* 設置圖片的最大寬度 */
+    height: auto; /* 讓圖片保持原始高度比例 */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* 響應式設計 - 螢幕小於等於 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* 調整字體大小 */
+    }
+    .login-image img {
+        max-width: 80%; /* 設置圖片的最大寬度為父元素寬度的80% */
+        height: auto; /* 讓圖片保持原始高度比例 */
+    }
+}
+
+/* 響應式設計 - 螢幕小於等於 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* 更小的字體大小 */
+    }
+    .login-image img {
+        max-width: 70%; /* 設置圖片的最大寬度為父元素寬度的70% */
+        height: auto; /* 讓圖片保持原始高度比例 */
+    }
+}

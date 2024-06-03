@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="styleslast.css">
+</head>
+<body>
+<main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audioClick = new Audio('sounds/click.mp3');
+
+            // 在整个文档上添加点击事件监听器
+            document.addEventListener('click', function(event) {
+                // 播放点击音效
+                audioClick.play();
+
+                // 如果点击的是链接，则进行页面导航
+                if (event.target.tagName === 'A') {
+                    const href = event.target.getAttribute('href');
+                    if (href && href !== '#') {
+                        // 阻止默认导航行为，手动打开链接
+                        event.preventDefault();
+                        // 等待音效播放完毕再进行导航
+                        audioClick.onended = function() {
+                            window.open(href, '_blank');
+                        };
+                    }
+                }
+            });
+        });
+    </script>
+</main>
+<audio id="backgroundMusic" autoplay loop>
+    <source src="sounds/background.mp3" type="audio/mpeg">
+</audio>
+<h1>404 - Page Not Found</h1>
+<p>Oops! The page you are looking for could not be found.</p>
+<a href="index.html" class="btn">Go back to homepage </a>
+
+<footer>
+    <p>&copy; Published online in 2024 | Give me your money.</p>
+</footer>
+</body>
+</html>
